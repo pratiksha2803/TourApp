@@ -1,0 +1,98 @@
+<html>
+
+<head>
+    <script src="https://www.gstatic.com/firebasejs/5.3.0/firebase.js"></script>
+    <script>
+        // Initialize Firebase
+        var config = {
+            apiKey: "AIzaSyBC2JOrK12TMk-VwQYuD-gMjp1ozLvVJ0k",
+            authDomain: "tourappa.firebaseapp.com",
+            databaseURL: "https://tourappa.firebaseio.com",
+            projectId: "tourappa",
+            storageBucket: "tourappa.appspot.com",
+            messagingSenderId: "629540902745"
+        };
+        firebase.initializeApp(config);
+    </script>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="i =edge">
+    <title>Manage Your Profile</title>
+    <meta name="description" content="Personal portfolio of Web Designer and Developer Samir Alibabic">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--link to our stylesheet-->
+    <link rel="stylesheet" href="guide-page.css" />
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+    <link rel="shortcut icon" href="tour_guide_fav_icon.png">    
+    <!-- Place favicon.ico in the root directory -->
+    <link rel="stylesheet" href="https://samiralibabic.github.io/portfolio/css/normalize.css">
+    <!-- Google Font Lato -->
+    <link href='https://fonts.googleapis.com/css?family=Lato:400,300' rel='stylesheet' type='text/css'>
+    <!-- Font Awesome  -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://samiralibabic.github.io/portfolio/css/font-mfizz-2.3.0/font-mfizz.css">
+
+    <!-- Bootstrap -->
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    <script src="https://samiralibabic.github.io/portfolio/js/vendor/modernizr-2.8.3.min.js"></script>
+</head>
+
+<body>
+    <a class="navbar-brand" href="index.html#landing"><span class="glyphicon glyphicon-home" aria-label="Home" aria-hidden="true"></span></a>    
+    <header id="landing">
+                <nav class="navbar navbar-default navbar-fixed-top">
+            <div id="" class="container-fluid">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#main-menu-items" aria-expanded="false">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+                </div>
+                <div class="collapse navbar-collapse navbar-right" id="main-menu-items">
+                    <ul class="nav navbar-nav">
+
+                        <li><a href="#intro">About</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                        <li class="hidden" id="avatar-icon-spot"></li>
+                        <!--<li id="log-in-button"><a href="#">Log In</a>-->
+                        <li class="" id="login_button">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">LOG IN</a>
+                            <ul class="dropdown-menu">
+                                <li><a href="#" id="log_in_as_tourist">LOG IN AS TOURIST</a></li>
+                                <li><a href="#" id="log_in_as_tour_guide">LOG IN AS TOUR GUIDE</a></li>
+                            </ul>                             
+                        </li>
+                        <!--</li>-->
+                        <li class="" id="logout_button"><a href="#">Log Out</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!--displays error message if no user-->
+    <!--displays profile entirely if user logged in-->
+    <section id="intro" class="row">
+
+
+        <div style="color: black;" id="error">
+                   <button class="btn-lg center-block" type="button"> ACCESS YOUR PROFILE </button> 
+        </div>
+    </section>
+
+
+
+    <!--scripts for jquery, bootstrap-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <script src="https://samiralibabic.github.io/portfolio/js/plugins.js"></script>
+    <script src="https://samiralibabic.github.io/portfolio/js/main.js"></script>
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+    <!--<script src="script.js"></script>-->
+    <script src="guide-page.js"></script>
+    <script src="firebase.js"></script>
+    <script src="ui.js"></script>
+</body>
+
+</html>
